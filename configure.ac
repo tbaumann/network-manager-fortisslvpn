@@ -4,7 +4,8 @@ AC_INIT(NetworkManager-fortisslvpn,
         1.2.5,
         https://bugzilla.gnome.org/enter_bug.cgi?product=NetworkManager,
         NetworkManager-fortisslvpn)
-AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz])
+AC_CONFIG_AUX_DIR([build-aux])
+AM_INIT_AUTOMAKE([1.9 foreign no-dist-gzip dist-xz subdir-objects])
 AM_MAINTAINER_MODE
 
 AC_CONFIG_MACRO_DIR([m4])
